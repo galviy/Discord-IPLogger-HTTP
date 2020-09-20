@@ -1,5 +1,6 @@
 # IPLogger-HTTP-NodeJS
 *Simple IP-Loger from localhost coded by Node-JS*
+*You must have server for run this tools*
 * Download  Node.js https://nodejs.org/en/download/
 
 ## How to use it (linux)

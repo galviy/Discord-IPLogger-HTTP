@@ -24,8 +24,7 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
   ///Coded by !GalvinID#3839
   console.log('======================================')
   
-   
-        res.write('<p>Hi There &#128526;</p>')			
+  res.write('<p>Hi There &#128526;</p>')			
 		res.write('<meta http-equiv = "refresh" content = "0.1; url = https://PUT YOUR WEBSITE LINK " /')
 		res.write('</body>') ;
 		res.write('</html>') ;
@@ -33,14 +32,12 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
         res.end();
     }
     
-	
-    else  
+else  
 req.connection.remoteAddress || 
         req.socket.remoteAddress || 
         req.connection.socket.remoteAddress
 		var ipAddress = req.connection.remoteAddress;
         res.end('');
-
 });
 
 server.listen(80); 

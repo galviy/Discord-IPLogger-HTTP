@@ -1,5 +1,5 @@
 # IPLogger-HTTP-NodeJS
-*Download  Node.js https://nodejs.org/en/download/
+* Download  Node.js https://nodejs.org/en/download/
 
 ## How to use it (linux)
 1. git clone https://github.com/GalvinID/IPLogger-HTTP-NodeJS
@@ -16,4 +16,4 @@
 4. Good luck.
 
 # Warning
-* Don't use this tools for illegal thins .
+* Don't use this tools for illegal things .

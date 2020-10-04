@@ -1,6 +1,6 @@
-var http = require('http'); 
+var http = require('http');
+const config = require("./httpconfig.json")
 var server = http.createServer(function (req, res) {  
-
     if (req.url == '/') { 
     
 var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() || 
@@ -25,7 +25,7 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
   console.log('======================================')
   
   res.write('<p>Hi There &#128526;</p>')			
-		res.write('<meta http-equiv = "refresh" content = "0.1; url = https://PUT YOUR WEBSITE LINK " /')
+		res.write(`<meta http-equiv = "refresh" content = "0.1; url = https://${config.ip} " /`)
 		res.write('</body>') ;
 		res.write('</html>') ;
 		
@@ -43,6 +43,4 @@ req.connection.remoteAddress ||
 server.listen(80); 
 console.log('Simple IP-Logger by GalvinID')
 console.log('Server UP in Port '+ server._connectionKey)
-
-
 

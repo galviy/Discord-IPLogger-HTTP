@@ -1,3 +1,5 @@
 {
     "ip" : "Your IP"
+    "token" : "Your Token Discord"
+    "channel" : "Channel ID Discord (DEV Mode)"
 }

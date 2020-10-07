@@ -14,17 +14,19 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
     ipAddress = ipAddress.substr(7)
   }
   console.log('New Connection Has Accepted. And Send To Discord Channel.')
-  //console.log('======================================')
-  //console.log('IP-Logger : ' + ipAddress)
-  //console.log('Method : ' + req.method)
-  //console.log('Route : ' + req.url)
-  //console.log('Headers : ' + req.headers['user-agent'])
-  //console.log('Host/IP : ' + req.headers['host'])
-  //console.log('Connection : ' + req.headers['connection'])
-  //console.log('Accept : ' + req.headers['accept'])
-  //console.log('HTTP Version : ' + req.httpVersion)
+  /*console.log(`
+======================================
+IP-Logger: ${ipAddress}
+Method: ${req.method}
+Route: ${req.url}
+Headers: ${req.headers['user-agent']}
+Host/IP: ${req.headers['host']}
+Connection: ${req.headers['connection']}
+Accept: ${req.headers['accept']}
+======================================
+`)*/
+
   ///Coded by !GalvinID#3839
- // console.log('======================================')
 //Note: If You Not Have Discord, You Can Remove '//' For Simple. And Give // On 'Var discord = require('discord.js')'
   
   res.write('<p>Hi There &#128526;</p>')			
@@ -58,13 +60,18 @@ client.on("message", async message => {
   const command = args.shift().toLowerCase();
 	//Main
 var channel = client.channels.get(config.channel)
-var embed = new discord.MessageEmbed()
+
+let embed = new discord.MessageEmbed()
 .setTitle(`**New Connection!**`)
-.addField(`**IP Address**`, ipAddress)
-.addField(`**Method**`, req.method)
-.addField(`**User-Agent**`,req.headers['user-agent'])
-.addField(`**Connection**`,req.headers['connection'])
-.addField(`**Accept**`,req.headers['accept'])
+.setDescription(`
+IP-Logger: \`${ipAddress}\`
+Method: \`${req.method}\`
+Route: \`${req.url}\`
+Headers: \`${req.headers['user-agent']}\`
+Host/IP: \`${req.headers['host']}\`
+Connection: \`${req.headers['connection']}\`
+Accept: \`${req.headers['accept']}\`
+`)
 message.channel.send(embed)
 	
 //DISCORD MESSAGE Coded By Fika.

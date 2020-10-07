@@ -48,7 +48,7 @@ console.log('Simple IP-Logger by GalvinID')
 console.log('Server UP in Port '+ server._connectionKey)
 	
   console.log(`Bot is Online Now!`);
-  client.user.setActivity(`GTPSController By GuckTube YT`);
+  client.user.setActivity(`Discord IP Logger by GalvinID, GucktubeYT, Fika`);
 });
 
 client.on("message", async message => {

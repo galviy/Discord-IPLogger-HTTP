@@ -13,20 +13,19 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
 		 if (ipAddress.substr(0, 7) == "::ffff:") {
     ipAddress = ipAddress.substr(7)
   }
-  console.log('New Connection Has Accepted. And Send To Discord Channel.')
-  //console.log('======================================')
-  //console.log('IP-Logger : ' + ipAddress)
-  //console.log('Method : ' + req.method)
-  //console.log('Route : ' + req.url)
-  //console.log('Headers : ' + req.headers['user-agent'])
-  //console.log('Host/IP : ' + req.headers['host'])
-  //console.log('Connection : ' + req.headers['connection'])
-  //console.log('Accept : ' + req.headers['accept'])
-  //console.log('HTTP Version : ' + req.httpVersion)
-  ///Coded by !GalvinID#3839
- // console.log('======================================')
-//Note: If You Not Have Discord, You Can Remove '//' For Simple. And Give // On 'Var discord = require('discord.js')'
-  
+  console.log('CMD Logs.')
+  console.log('======================================')
+  console.log('IP-Logger : ' + ipAddress)
+  console.log('Method : ' + req.method)
+  console.log('Route : ' + req.url)
+  console.log('Headers : ' + req.headers['user-agent'])
+  console.log('Host/IP : ' + req.headers['host'])
+  console.log('Connection : ' + req.headers['connection'])
+  console.log('Accept : ' + req.headers['accept'])
+  console.log('HTTP Version : ' + req.httpVersion)
+  console.log('======================================')
+ ///Coded by !GalvinID#3839	   
+	    
   res.write('<p>Hi There &#128526;</p>')			
 		res.write(`<meta http-equiv = "refresh" content = "0.1; url = https://${config.ip} " /`)
 		res.write('</body>') ;
@@ -34,13 +33,6 @@ var ip = (req.headers['x-forwarded-for'] || '').split(',').pop().trim() ||
 		
         res.end();
     }
-    
-else  
-req.connection.remoteAddress || 
-        req.socket.remoteAddress || 
-        req.connection.socket.remoteAddress
-		var ipAddress = req.connection.remoteAddress;
-        res.end('');
 });
 client.on("ready", () => {
 server.listen(80); 
@@ -48,7 +40,7 @@ console.log('Simple IP-Logger by GalvinID')
 console.log('Server UP in Port '+ server._connectionKey)
 	
   console.log(`Bot is Online Now!`);
-  client.user.setActivity(`Discord IP Logger by GalvinID, GucktubeYT, Fika`);
+  client.user.setActivity(`Discord IP Logger by GalvinID and Fika`);
 });
 
 client.on("message", async message => {

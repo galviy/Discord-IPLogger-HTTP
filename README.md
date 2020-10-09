@@ -7,9 +7,12 @@
 `npm install discord.js`
 
 ## How to use it 
-* Download https://github.com/GalvinID/IPLogger-HTTP-NodeJS
-* cd IPLogger-HTTP-NodeJS
-* node IPLogger.js
+* Open httpconfig.json and edit "your ip" to ur ip do you want to do (for example) 
+
+`{
+    "ip" : "http://www.google.com"
+}`
+
 * Open line 65 and edit it to your discord token
 
 ![image](https://cdn.discordapp.com/attachments/751084293190582363/757231272618885161/unknown.png)

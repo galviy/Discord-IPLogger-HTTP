@@ -3,15 +3,10 @@
 *You must have server for run this tools*
 * Download  Node.js https://nodejs.org/en/download/
 
-## How to use it (linux)
-* git clone https://github.com/GalvinID/IPLogger-HTTP-NodeJS
-* cd IPLogger-HTTP-NodeJS
-* nano IPLogger.js change line 29 to website do you want to do
-* node IPLogger.js
-![image](https://cdn.discordapp.com/attachments/752489288377172000/757223562556997652/unknown.png)
-* send your http://ip/ to your victim.
+# Installer command
+`npm install discord.js`
 
-## How to use it (windows)
+## How to use it 
 * Download https://github.com/GalvinID/IPLogger-HTTP-NodeJS
 * cd IPLogger-HTTP-NodeJS
 * node IPLogger.js

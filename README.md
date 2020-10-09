@@ -15,10 +15,6 @@
     "channel" : "xxx-xxx-xxx" Channel ID Discord (DEV Mode)
 }`
 
-* Open line 65 and edit it to your discord token
-
-![image](https://cdn.discordapp.com/attachments/751084293190582363/757231272618885161/unknown.png)
-
 * send your http://ip/ to your victim.
 
 # Warning

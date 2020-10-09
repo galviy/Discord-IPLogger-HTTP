@@ -10,8 +10,10 @@
 * Download https://github.com/GalvinID/IPLogger-HTTP-NodeJS
 * cd IPLogger-HTTP-NodeJS
 * node IPLogger.js
-* Open line 29 with nodepad++ and edit it to website do you want to do
+* Open line 65 and edit it to your discord token
+
 ![image](https://cdn.discordapp.com/attachments/751084293190582363/757231272618885161/unknown.png)
+
 * send your http://ip/ to your victim.
 
 # Warning

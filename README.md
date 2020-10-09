@@ -11,6 +11,8 @@
 
 `{
     "ip" : "http://www.google.com"
+    "token" : "xxx-xxx-xxx"(Your Token Discord)
+    "channel" : "xxx-xxx-xxx" Channel ID Discord (DEV Mode)
 }`
 
 * Open line 65 and edit it to your discord token
